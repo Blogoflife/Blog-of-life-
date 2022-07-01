@@ -26,19 +26,19 @@ main{
 }
 @keyframes animado{
     0%,15%{
-        background-image: url("/img/port3.jpeg");
+        background-image: url("../img/port3.jpeg");
     }
     20%,40%{
-        background-image: url("/img/port1.jpg");
+        background-image: url("../img/port1.jpg");
     }
     45%,60%{
-        background-image: url("/img/port2.jpg");
+        background-image: url("../img/port2.jpg");
     }
     65%,85%{
-        background-image: url("/img/port5.jpg");
+        background-image: url("../img/port5.jpg");
     }
     90%,100%{
-        background-image: url("/img/port4.jpg");
+        background-image: url("../img/port4.jpg");
     }
 }
 .capa{
