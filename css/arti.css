@@ -1,0 +1,164 @@
+body{
+  background-color: burlywood;
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 40px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 40px;
+      padding-left: 40px;
+    }
+    nav ul li a{
+      font-size: 10px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 500px;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  
+  .texto img:hover{
+    -webkit-transform:scale(1.3);transform:scale(0.9);
+    overflow:hidden;
+    filter: opacity(.8);
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .texto{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-gap: 10px;
+   padding: 10px;
+   background-color: coral;
+   margin-top: 10px;
+   width: 100%;
+  }
+  .texto div{
+   text-align: justify;
+   font-size: 16px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   background: rgb(88, 218, 194);
+  }
+  .texto h1{
+    font-size: 20px;
+    text-align: center;
+    background-color:green;
+    color: aliceblue;
+  }
+  .texto img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .texto button{
+   font-size: 16px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   background-color: rgb(235, 139, 187);
+   border-radius: 8px;
+   border:2px double rgb(184, 20, 20);
+  }
+  .texto button:hover{
+   background: indianred;
+   cursor:pointer;
+   color: ivory;
+  }
+  @media screen and (max-width:500px)
+  {
+    .texto{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 10px;
+      padding: 5px;
+      margin-top: 10px;
+      width: 100%;
+     }
+  }
+  *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  .animep img{
+    width: 100%;
+    height: 400px;
+  }
+  footer{
+    background-color: green;
+    color:white;
+  }
+  .cit{
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    font-family: monospace;
+  }
