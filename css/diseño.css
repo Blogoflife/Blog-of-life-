@@ -72,6 +72,7 @@ main{
 }
 .galeria img:hover{
     -webkit-transform:scale(1.6);transform:scale(1.1);
+    padding: 5px;
 }
 /*Contenido*/
 .content{
@@ -221,3 +222,11 @@ button:hover{
         height: 300px;
     }
 }
+.ports img:hover{
+    -webkit-transform:scale(1.3);transform:scale(1.2);
+    overflow:hidden;
+    filter: opacity(.8);
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 10px;
+  }

@@ -162,3 +162,256 @@ nav{
     text-align: center;
     font-family: monospace;
   }
+  .leccion{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+    background-color: coral;
+    padding: 10px;
+    width: 100%;
+  }
+  .leccion div{
+    text-align: justify;
+    color:white;
+    font-size: 16px;
+    background-color: green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .leccion div > h1{
+    text-align: center;
+  }
+  .leccion div > p{
+    color:black;
+    background:#1b9bff;
+  }
+  .uno{
+    position: relative;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(99, 75, 165);
+    height: 250px;
+    color: azure;
+  }
+  .uno img{
+    width: 400px;
+    height: 220px;
+    float: right;
+    padding: 10px;
+    margin-top: -100px;
+  }
+  .dos{
+    position: relative;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(127, 255, 148);
+    height: 250px;
+    text-align: right;
+  }
+  .dos img{
+    width: 400px;
+    height: 200px;
+    float: left;
+    padding: 8px;
+    margin-top: -70px;
+  }
+  .tres{
+    position: relative;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(222, 245, 139);
+    height: 250px;
+  }
+  .tres img{
+    width: 400px;
+    height: 200px;
+    float: right;
+    padding: 8px;
+    margin-top: -145px;
+  }
+  .cuatro{
+    position: relative;
+    font-size: 20px;
+    padding: 10px;
+    text-align: right;
+    background-color: rgb(255, 178, 78);
+    height: 200px;
+    color: azure;
+  }
+  .cuatro img{
+    width: 400px;
+    height: 200px;
+    float: left;
+    padding: 8px;
+    margin-top: -65px;
+  }
+  .cinco{
+    position: relative;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(222, 245, 139);
+    height: 250px;
+  }
+  .cinco img{
+    width: 400px;
+    height: 200px;
+    float: right;
+    padding: 8px;
+    margin-top: -170px;
+  }
+  section{
+    padding: 10px;
+    background: url("/img/paise.jpg");background-repeat: no-repeat;background-size: cover;
+    width: 100%;
+    margin: 40px;
+    height:580px;
+    transform: perspective(400px) rotateY(5deg);
+    background-color: rgb(150, 200, 200);
+  }
+  section div{
+    padding-top: 205px;
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+    color: aliceblue;
+    animation-duration: 3s;
+    animation-name: slidein;
+    background-position: center;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  } 
+  @keyframes slidein {
+    from {
+      margin-left:100%;
+      width:300%
+    }
+  
+    to {
+     margin-left:0%;
+     width:100%;
+   }
+  }
+  section div img:hover{
+    transform: scale(0); /*Efecto zoom-out*/
+    opacity: 0;
+    transition-delay: 0s;
+    }
+@media screen and (max-width:500px)
+{
+  section{
+    padding: 10px;
+    background: url("/img/paise.jpg");background-repeat: no-repeat;background-size: cover;
+    width: 100%;
+    margin: 10px;
+    height:300px;
+    transform: perspective(300px) rotateY(2deg);
+    background-color: rgb(150, 200, 200);
+  }
+  section div{
+    padding-top: 100px;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color: aliceblue;
+    animation-duration: 3s;
+    animation-name: slidein;
+    background-position: center;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  } 
+  .leccion{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:15px;
+    background-color: coral;
+    padding: 6px;
+    width: 100%;
+  }
+  .leccion div{
+    text-align: justify;
+    color:white;
+    font-size: 17px;
+    background-color: green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .leccion div > h1{
+    text-align: center;
+  }
+  .leccion div > p{
+    color:black;
+    background:#1b9bff;
+  }
+  .leccion div >img{
+    width: 100%;
+    height: 200px;
+  }
+}
+@media screen and (max-width:980px)
+{
+  .uno{
+    display: block;
+    font-size: 18px;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+  }
+  .uno img{
+    width: 400px;
+    height: 200px;
+    margin: 0;
+  }
+  .dos{
+    display:block;
+    font-size: 20px;
+    background-color: rgb(127, 255, 148);
+    height: 350px;
+    text-align: right;
+  }
+  .dos img{
+    width: 400px;
+    margin: 0;
+    height: 200px;
+  }
+  .tres{
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(222, 245, 139);
+    height: 400px;
+  }
+  .tres img{
+    margin: 0;
+    width: 400px;
+    height: 200px;
+  }
+  .cuatro{
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    text-align: right;
+    background-color: rgb(255, 178, 78);
+    height: 320px;
+    color: azure;
+  }
+  .cuatro img{
+    margin: 0;
+    width: 400px;
+    height: 200px;
+  }
+  .cinco{
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    text-align: right;
+    background-color: rgb(249, 78, 255);
+    height: 420px;
+    color: azure;
+  }
+  .cinco img{
+    margin: 0;
+    width: 400px;
+    height: 200px;
+  }
+}
